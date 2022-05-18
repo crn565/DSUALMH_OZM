@@ -25,7 +25,7 @@ Este es listado de dispositivos:
 ## Medidas
 
 En este experimento especificamos el número de medidas soportadas por los diferentes OZM, como son la potencia activa, aparente y reactiva, la frecuencia, el voltaje, la corriente y el factor de potencia.
-En  este experimentos añadimos ademas los transitorios de la tensión (50), corriente(50) y potencia (50). Es decir añadimos en total 150  valores más respecto al segundo experimento.
+En  este experimento añadimos ademas los transitorios de la tensión (50), corriente(50) y potencia (50). Es decir añadimos en total 150  valores más respecto al segundo experimento.
 
 ## Nota 
 El DS al exceder de 25MB se ha subido comprimido con el winrar 
