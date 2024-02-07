@@ -24,13 +24,13 @@ En este repositorio se analiza el impacto de tomar los armónicos para desagrega
 
 Se adjunta en un directorio aparte dentro de root, el contenido de los ficheros yaml de metadatos, así como el nuevo convertidor que soporta también los armónicos. Destacar que en los cuadernos de Jupyter Notebook no solo está el código en Python sino también los resultados de ejecutar sobre el dataset DSUALM0H, Asimismo, mencionar que para ejecutar este código necesitamos tener instalado el toolkit NILMTK (disponible también en Github), así como también disponer del nuevo dataset que ya incluye los armónicos.
 
-**DEBIDO A SU TAMAÑO, POR SU EXTENSION NO ESTAN DISPONIBLES LOS FICHEREOS DE DATOS EN FROMATO CSV EN ESTE REPOSITORIO EN CONCRETO, PERO SI ESTA DISPONIBLE EN EL RESPOSITORIO DSUALMH EL DATASET COMPLETO CON TODOS LOS ARMONICOS.**
+**DEBIDO A SU TAMAÑO, POR SU EXTENSION NO ESTAN DISPONIBLES LOS FICHEROS DE DATOS EN FORMATO CSV EN ESTE REPOSITORIO EN CONCRETO, PERO SI ESTA DISPONIBLE EN EL RESPOSITORIO DSUALMH EL DATASET COMPLETO CON TODOS LOS ARMONICOS.**
 
- Nota: El DS al exceder de 25MB se ha subido comprimido con el programa winrar.
+Nota: El DS al exceder de 25MB se ha subido comprimido con el programa winrar.
 
 Nuestro objetivo es proporcionar a los investigadores de NILM nuevos repositorios de datos para ampliar el abanico existente. Dado que estos nuevos conjuntos de datos pueden contener más de 150 variables eléctricas registradas a alta frecuencia en diferentes aplicaciones de uso cotidiano, al ofrecer esta amplia gama de datos, esperamos impulsar y mejorar las investigaciones en el campo del NILM.
 
-A continuación, pues si más dilación, se expone de forma genérica las conclusiones principales de tomar solo los armónicos impares, despreciando todos los armónicos o tomando todos ellos (pares e impares). \*\*
+A continuación, pues si más dilación, se expone de forma genérica las conclusiones principales de tomar solo los armónicos impares, despreciando todos los armónicos o tomando todos ellos (pares e impares).
 
 # INTRODUCCION
 
@@ -174,13 +174,13 @@ En este trabajo en el ámbito de NILMTK además de incorporar tanto las métrica
 
 Por otro lado, si comparamos los resultados de las métricas obtenidas sobre DSUALM o DSUALMT, frente a IAWE o DEPS los resultados son mucho peores especialmente en cuanto al periodo de muestreo necesario, destacando especialmente los valores obtenidos para la métrica MNEAP.
 
-# Publicaciones*
+# Publicaciones
 
 Hay un artículo de mi autoría sobre el NILM que usa el hardware OZM monofásico en lugar del OZM v2:
 
 \- C. Rodriguez-Navarro, A. Alcayde, V. Isanbaev, L. Castro-Santos, A. Filgueira-Vizoso, and F. G. Montoya, “DSUALMH- A new high-resolution dataset for NILM,” \*Renewable Energy and Power Quality Journal\*, vol. 21, no. 1, pp. 238–243, Jul. 2023, doi: 10.24084/repqj21.286.
 
-Asimismo, con el fin de hacer replicable todo este trabajo se ha desarrollado un nuevo multi contador abierto llamado OMPM esta publicada en la revista científica “Inventions:” 
+Asimismo, con el fin de hacer replicable todo este trabajo se ha desarrollado un nuevo multi contador abierto llamado OMPM esta publicada en la revista científica “Inventions:”
 
 \- C. Rodríguez-Navarro, F. Portillo, F. Martínez, F. Manzano-Agugliaro, and A. Alcayde, “Development and Application of an Open Power Meter Suitable for NILM,” \*Inventions\*, vol. 9, no. 1, p. 2, Dec. 2023, doi: 10.3390/inventions9010002.
 
