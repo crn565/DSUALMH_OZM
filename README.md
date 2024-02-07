@@ -78,10 +78,11 @@ Normalmente en NILMTK se usan formatos de DS estandarizados, pero dada la exclus
 
 En los directorios de los nuevos conversores situamos, no sólo el código en Python de los nuevos convertidores, sino también incluimos nuevos subdirectorios en “/metadata/”, que incluirán los ficheros de metadatos en formato yaml. Podemos ver en la Ilustración 4 la configuración de todos los ficheros necesarios para los convertidores, así como la estructura de directorios requerida.
 
+![Diagrama Descripción generada automáticamente](media/grafico4.png)
 Ilustración 4-Estructura del fichero de metadatos
 
 Como cada fichero csv es obtenido en la fase de anterior a partir de los ficheros de los OZM, es necesario numerarlos, siendo el nº 1 el correspondiente al medidor principal. Para ello, la nueva función accede a todos los citados ficheros de datos de medidas localizados en la carpeta de entrada “/electricity/”, usando para ello el fichero de etiquetas labels.csv, proceso que representamos en la Ilustración 5.
-
+![Diagrama Descripción generada automáticamente](media/grafico5.png)
 Ilustración 5-Estructura ficheros de datos
 
 Una vez se han procesado todos los ficheros de medidas, procedemos a unir éstos en formato yaml, para posteriormente convertir la estructura de datos en un nuevo DS en formato H5. Ubicados los ficheros de datos, lo primero es invocar el conversor del DS llamando a la nueva función **convert_ualm**, pasándole la ruta de los metadatos y el nuevo nombre del fichero del DS que se generará en formato H5. Una vez creado el nuevo DS, podemos realizar un preanálisis de los datos siendo especialmente interesante representar los gráficos de tensión, potencias y corriente para los diferentes aplicativos.
