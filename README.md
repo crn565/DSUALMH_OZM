@@ -38,13 +38,13 @@ Ilustración 1-Aspecto del OZM
 
 Precisamente gracias a las características del OZM, el objetivo de este trabajo es usando los datos arrojados por los nuevos dispositivos, mostrar el uso y potenciales aplicaciones en cuanto a la desegregación de la energía con estos datos, adaptando para ello la herramienta de monitoreo de carga no intrusivo NILMTK. Hay que destacar que para capturar los datos de los OZM tanto sin usar armónicos como usando los armónicos de tensión, corriente y potencia hasta el orden 50, así como asociar los correspondientes metadatos del OZM, se proporcionan dos nuevos conversores y convertidores que nos han permitido crear dos nuevos DS: DSUALM y DSUALMH almacenándose en el formato HDF5.
 
-**TRABAJOS RELACIONADOS**
+# TRABAJOS RELACIONADOS
 
-En cuanto a los métodos existentes de desagregación de energía se pueden clasificar en cuatro grupos principales: **métodos de optimización** (destacando Vector Support Machines o SVM , Bird swarm algorithm o BSA , algoritmos genéticos y Particle Swarm Optimization o PSO [6] entre otros), **métodos supervisados** (destacando los clasificadores bayesianos , Support Vector Machine o SVM , el algoritmo Discriminative Disaggregation Sparse Coding o DDSC , las Redes Neuronales Artificiales o ANN, así como sus extensiones), **métodos no supervisados** (destacando el de optimización combinatoria o CO, los modelos de Markov o HMM y sus extensiones, como el FHMM ), y **otros**.
+En cuanto a los métodos existentes de desagregación de energía se pueden clasificar en cuatro grupos principales: **métodos de optimización** (destacando Vector Support Machines o SVM , Bird swarm algorithm o BSA , algoritmos genéticos y Particle Swarm Optimization o PSO  entre otros), **métodos supervisados** (destacando los clasificadores bayesianos , Support Vector Machine o SVM , el algoritmo Discriminative Disaggregation Sparse Coding o DDSC , las Redes Neuronales Artificiales o ANN, así como sus extensiones), **métodos no supervisados** (destacando el de optimización combinatoria o CO, los modelos de Markov o HMM y sus extensiones, como el FHMM ), y **otros**.
 
 Por otro lado existen Dataset Públicos que pueden ser usados para probar y comparar los resultados ofrecidos por diferentes algoritmos de desagregación de energía, entre los que destacamos **AMPds**: lecturas para un medidor general de 1’, así como lecturas submedidas de 19 circuitos individuales, **DRED:** datos de electricidad, información ambiental, información de ocupación e información del hogar, **ECO**: datos de consumo agregado de 1 Hz y también de datos tomados a 1 Hz de electrodomésticos seleccionados en 6 hogares durante 8 meses, **GREEND**: datos de potencia tomadas a intervalos de 1 segundo de 9 electrodomésticos y la demanda de energía total de 9 hogares durante un año, **HES:** medidas de 51 electrodomésticos a intervalos de 2’ de 251 hogares en 12 meses, **IAWE**: medidas agregadas y las submedidos de electricidad y gas de 33 electrodomésticos con una resolución de 1” en 73 días de una vivienda , **REDD:** mediciones de potencia a intervalos de 3”a 4” de 6 hogares de EE.UU., **REFIT:** mediciones de potencia del agregado y 9 aparatos individuales de 20 hogares, con una resolución de 1 muestra cada 8”**, UK-DALE:** medidas agregadas a 16 kHz y datos de energía submedidos de 6” de electrodomésticos individuales en 3 hogares UK, así como un agregado de 1” y submedidos de 6” para 2 hogares adicionales , **DEPS:** lecturas a 1 Hz sobre 6 dispositivos presentes en un aula tomadas durante un mes.
 
-**3.  ARQUITECTURA**
+#  ARQUITECTURA
 
 Para el proceso de desagregación usaremos el Toolkit NILMTK, cuyo flujo podemos ver en la ilustración siguiente.
 
@@ -162,7 +162,7 @@ Asimismo, si comparamos GT y Pred para el DS de DEPS las divergencias son muy im
 
 Ilustración 15-Comparación GT con Pred para DEPS
 
-**V. CONCLUSIONES**
+# CONCLUSIONES
 
 En este trabajo en el ámbito de NILMTK además de incorporar tanto las métricas como las herramientas disponibles en el toolkit, se ha incorporado como novedad el nuevo formato de timestamp de 13 dígitos además de dos nuevos conversores para las medidas obtenidas de OZM (con o sin transitorios ) así como dos nuevos convertidores basados en IAWE (con o sin transitorios ) de modo que de este modo se elimina la barrera de entrada a todo aquel investigador que cuente con uno o varios OZM y desee acceder al NILM .
 
