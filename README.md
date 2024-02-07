@@ -20,7 +20,7 @@ Este es listado de dispositivos:
    
    6-Aspiradora
 
-En este repositorio se analiza el impacto de tomar los armónicos para desagregar el consumo eléctrico usando OZM v1 y el Toolkit NILMTK. En éste especificamos el número de medidas soportadas por los diferentes OZM, como son la potencia activa, aparente y reactiva, la frecuencia, el voltaje, la corriente y el factor de potencia y ademas ademas los armonicos  de la tensión (50), corriente(50) y potencia (50). Es decir añadimos en total 150  valores más respecto al segundo experimento donde se ignoran los armonicos.
+En este repositorio se analiza el impacto de tomar los armónicos para desagregar el consumo eléctrico usando OZM v1 y el Toolkit NILMTK. En éste especificamos el número de medidas soportadas por los diferentes OZM, como son la potencia activa, aparente y reactiva, la frecuencia, el voltaje, la corriente y el factor de potencia asi como tambien,ademas añadimos los armonicos  de la tensión (50), corriente(50) y potencia (50). Es decir añadimos en total 150  valores más respecto al segundo experimento donde se ignoran los armonicos.
 
 Se adjunta en un directorio aparte dentro de root, el contenido de los ficheros yaml de metadatos asi como el nuevo convertidor que soporta tambien los transitorios.Destacar que en los cuadernos de Jupyter Notebook no solo está el código en Python sino también los resultados de ejecutar sobre el dataset DSUALM0H Asimismo, mencionar que para ejecutar este código necesitamos tener instalado el toolkit NILMTK (disponible también en Github), así como también disponer del nuevo dataset que ya incluye los armónicos.
 
