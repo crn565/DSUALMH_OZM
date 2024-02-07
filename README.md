@@ -1,4 +1,4 @@
-# REPOSITORIO DE 6 APLICATIVOS MAS EL AGREGADO MEDIANTE OZM V INCLUYENDO ARMONICOS
+# REPOSITORIO DE 6 APLICATIVOS MAS EL AGREGADO MEDIANTE OZM V1 INCLUYENDO ARMONICOS
 
 Este  es el repositorio que constitiuye el tercer experimento con ozm v1 usando datos acoplados temporalmente. El acople temporal nos indica que  hay sincronizacion en el tiempo entre las diferentes medidas de los diferentes medidores asociados a los electrodésticos de uso común y el medidor comun principal. En este experimento además de las medidas habituales usaremos los armonicos de tension , corriente y potencia.
 
