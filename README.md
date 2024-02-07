@@ -1,34 +1,36 @@
 # REPOSITORIO DE 6 APLICATIVOS MAS EL AGREGADO MEDIANTE OZM V1 INCLUYENDO ARMONICOS
 
-Este  es el repositorio que constitiuye el tercer experimento con ozm v1 usando datos acoplados temporalmente. El acople temporal nos indica que  hay sincronizacion en el tiempo entre las diferentes medidas de los diferentes medidores asociados a los electrodésticos de uso común y el medidor comun principal. En este experimento además de las medidas habituales usaremos los armonicos de tension , corriente y potencia.
+Este es el repositorio que constituye el tercer experimento con ozm v1 usando datos acoplados temporalmente. El acople temporal nos indica que hay sincronización en el tiempo entre las diferentes medidas de los diferentes medidores asociados a la sincronización de uso común y el medidor común principal. En este experimento además de las medidas habituales usaremos los armónicos de tensión, corriente y potencia.
 
-El OZM v1 es un medidor monofásico de energía eléctrica (aunque ya existe una versión trifásica), que es además también analizador de calidad de la energía. Este dispositivo, es tanto de código abierto como de hardware abierto, y ha sido desarrollado conjuntamente entre las Universidades de Almería y Granada, contando además con capacidades de IoT, lo cual no sólo nos permite medir una amplia gama de variables eléctricas a una elevada frecuencia de muestreo de 15625 Hz (voltaje, intensidad, potencia activa, potencia reactiva, distorsión armónica total o THD, factor de potencia y armónicos tanto de intensidad  como de voltaje y potencia hasta el orden 50), sino que también nos permite capturar y tratar todas esas medidas.
+El OZM v1 es un medidor monofásico de energía eléctrica (aunque ya existe una versión trifásica), que es además también analizador de calidad de la energía. Este dispositivo, es tanto de código abierto como de hardware abierto, y ha sido desarrollado conjuntamente entre las Universidades de Almería y Granada, contando además con capacidades de IoT, lo cual no sólo nos permite medir una amplia gama de variables eléctricas a una elevada frecuencia de muestreo de 15625 Hz (voltaje, intensidad, potencia activa, potencia reactiva, distorsión armónica total o THD, factor de potencia y armónicos tanto de intensidad como de voltaje y potencia hasta el orden 50), sino que también nos permite capturar y tratar todas esas medidas.
 
-Usamos 6 contadores tipo OZM aplicados  a 5 electromesticos de uso común.
+Usamos 6 contadores tipo OZM aplicados a 5 electrodomésticos de uso común.
 
 Este es listado de dispositivos:
-   
-   1- Mains ( contador principal)
-   
-   2-Hervidor de agua
-   
-   3-Ventilador
-   
-   4-Congelador
-   
-   5- TV
-   
-   6-Aspiradora
 
-En este repositorio se analiza el impacto de tomar los armónicos para desagregar el consumo eléctrico usando OZM v1 y el Toolkit NILMTK. En éste especificamos el número de medidas soportadas por los diferentes OZM, como son la potencia activa, aparente y reactiva, la frecuencia, el voltaje, la corriente y el factor de potencia asi como tambien,ademas añadimos los armonicos  de la tensión (50), corriente(50) y potencia (50). Es decir añadimos en total 150  valores más respecto al segundo experimento donde se ignoran los armonicos.
+1- Mains (contador principal)
 
-Se adjunta en un directorio aparte dentro de root, el contenido de los ficheros yaml de metadatos asi como el nuevo convertidor que soporta tambien los transitorios.Destacar que en los cuadernos de Jupyter Notebook no solo está el código en Python sino también los resultados de ejecutar sobre el dataset DSUALM0H Asimismo, mencionar que para ejecutar este código necesitamos tener instalado el toolkit NILMTK (disponible también en Github), así como también disponer del nuevo dataset que ya incluye los armónicos.
+2-Hervidor de agua
 
-**\*\*DEBIDO A SU TAMAÑO, POR SU EXTENSION NO ESTAN DISPONIBLES LOS FICHEREOS DE DATOS EN FROMATO CSV EN ESTE REPOSITORIO EN CONCRETO, PERO SI ESTA DISPONIBLE EN EL RESPOSITORIO DSUALMH EL DATASET COMPLETO CON TODOS LOS ARMONICOS.**
+3-Ventilador
 
-Nuestro objetivo es proporcionar a los investigadores de NILM nuevos repositorios de datos para ampliar el abanico existente. Dado que estos nuevos conjuntos de datos pueden contener más de 150 variables eléctricas registradas a alta frecuencia en diferentes aplicaciones de uso cotidiano, al ofrecer esta amplia gama de datos, esperamos impulsar y mejorar las investigaciones en el campo del NILM.**
+4-Congelador
 
-A continuación, pues si más dilación, se expone de forma genérica las conclusiones principales de tomar solo los armónicos impares, despreciando todos los armónicos o tomando todos ellos (pares e impares).**
+5- TV
+
+6-Aspiradora
+
+En este repositorio se analiza el impacto de tomar los armónicos para desagregar el consumo eléctrico usando OZM v1 y el Toolkit NILMTK. En éste especificamos el número de medidas soportadas por los diferentes OZM, como son la potencia activa, aparente y reactiva, la frecuencia, el voltaje, la corriente y el factor de potencia, así como así añadimos los armónicos de la tensión (50), corriente (50) y potencia (50). Es decir, añadimos en total 150 valores más respecto al segundo experimento donde se ignoran los armónicos.
+
+Se adjunta en un directorio aparte dentro de root, el contenido de los ficheros yaml de metadatos, así como el nuevo convertidor que soporta también los armónicos. Destacar que en los cuadernos de Jupyter Notebook no solo está el código en Python sino también los resultados de ejecutar sobre el dataset DSUALM0H, Asimismo, mencionar que para ejecutar este código necesitamos tener instalado el toolkit NILMTK (disponible también en Github), así como también disponer del nuevo dataset que ya incluye los armónicos.
+
+**DEBIDO A SU TAMAÑO, POR SU EXTENSION NO ESTAN DISPONIBLES LOS FICHEREOS DE DATOS EN FROMATO CSV EN ESTE REPOSITORIO EN CONCRETO, PERO SI ESTA DISPONIBLE EN EL RESPOSITORIO DSUALMH EL DATASET COMPLETO CON TODOS LOS ARMONICOS.**
+
+ Nota: El DS al exceder de 25MB se ha subido comprimido con el programa winrar.
+
+Nuestro objetivo es proporcionar a los investigadores de NILM nuevos repositorios de datos para ampliar el abanico existente. Dado que estos nuevos conjuntos de datos pueden contener más de 150 variables eléctricas registradas a alta frecuencia en diferentes aplicaciones de uso cotidiano, al ofrecer esta amplia gama de datos, esperamos impulsar y mejorar las investigaciones en el campo del NILM.
+
+A continuación, pues si más dilación, se expone de forma genérica las conclusiones principales de tomar solo los armónicos impares, despreciando todos los armónicos o tomando todos ellos (pares e impares). \*\*
 
 # INTRODUCCION
 
@@ -44,11 +46,11 @@ Precisamente gracias a las características del OZM, el objetivo de este trabajo
 
 # TRABAJOS RELACIONADOS
 
-En cuanto a los métodos existentes de desagregación de energía se pueden clasificar en cuatro grupos principales: **métodos de optimización** (destacando Vector Support Machines o SVM , Bird swarm algorithm o BSA , algoritmos genéticos y Particle Swarm Optimization o PSO  entre otros), **métodos supervisados** (destacando los clasificadores bayesianos , Support Vector Machine o SVM , el algoritmo Discriminative Disaggregation Sparse Coding o DDSC , las Redes Neuronales Artificiales o ANN, así como sus extensiones), **métodos no supervisados** (destacando el de optimización combinatoria o CO, los modelos de Markov o HMM y sus extensiones, como el FHMM ), y **otros**.
+En cuanto a los métodos existentes de desagregación de energía se pueden clasificar en cuatro grupos principales: **métodos de optimización** (destacando Vector Support Machines o SVM , Bird swarm algorithm o BSA , algoritmos genéticos y Particle Swarm Optimization o PSO entre otros), **métodos supervisados** (destacando los clasificadores bayesianos , Support Vector Machine o SVM , el algoritmo Discriminative Disaggregation Sparse Coding o DDSC , las Redes Neuronales Artificiales o ANN, así como sus extensiones), **métodos no supervisados** (destacando el de optimización combinatoria o CO, los modelos de Markov o HMM y sus extensiones, como el FHMM ), y **otros**.
 
 Por otro lado existen Dataset Públicos que pueden ser usados para probar y comparar los resultados ofrecidos por diferentes algoritmos de desagregación de energía, entre los que destacamos **AMPds**: lecturas para un medidor general de 1’, así como lecturas submedidas de 19 circuitos individuales, **DRED:** datos de electricidad, información ambiental, información de ocupación e información del hogar, **ECO**: datos de consumo agregado de 1 Hz y también de datos tomados a 1 Hz de electrodomésticos seleccionados en 6 hogares durante 8 meses, **GREEND**: datos de potencia tomadas a intervalos de 1 segundo de 9 electrodomésticos y la demanda de energía total de 9 hogares durante un año, **HES:** medidas de 51 electrodomésticos a intervalos de 2’ de 251 hogares en 12 meses, **IAWE**: medidas agregadas y las submedidos de electricidad y gas de 33 electrodomésticos con una resolución de 1” en 73 días de una vivienda , **REDD:** mediciones de potencia a intervalos de 3”a 4” de 6 hogares de EE.UU., **REFIT:** mediciones de potencia del agregado y 9 aparatos individuales de 20 hogares, con una resolución de 1 muestra cada 8”**, UK-DALE:** medidas agregadas a 16 kHz y datos de energía submedidos de 6” de electrodomésticos individuales en 3 hogares UK, así como un agregado de 1” y submedidos de 6” para 2 hogares adicionales , **DEPS:** lecturas a 1 Hz sobre 6 dispositivos presentes en un aula tomadas durante un mes.
 
-#  ARQUITECTURA
+# ARQUITECTURA
 
 Para el proceso de desagregación usaremos el Toolkit NILMTK, cuyo flujo podemos ver en la ilustración siguiente.
 
@@ -72,7 +74,7 @@ A continuación, necesitamos nuevos conversores donde haremos una serie de manip
 
 La siguiente tarea, es la conversión de los diferentes ficheros de medidas en formato csv pretratados en la fase anterior a un único fichero común en formato HDF5), y que almacenamos en la carpeta “/data/” que **también contendrá todos los metadatos del DS.**
 
-Normalmente en NILMTK [20] se usan formatos de DS estandarizados, pero dada la exclusividad de los datos ofrecidos por el OZM, requerimos un formato de datos nuevo, para lo cual creamos dos funciones: **convert_ualm** y c**onvert_ualmt** (para procesar los transitorios).
+Normalmente en NILMTK se usan formatos de DS estandarizados, pero dada la exclusividad de los datos ofrecidos por el OZM, requerimos un formato de datos nuevo, para lo cual creamos dos funciones: **convert_ualm** y c**onvert_ualmt** (para procesar los transitorios).
 
 En los directorios de los nuevos conversores situamos, no sólo el código en Python de los nuevos convertidores, sino también incluimos nuevos subdirectorios en “/metadata/”, que incluirán los ficheros de metadatos en formato yaml. Podemos ver en la Ilustración 4 la configuración de todos los ficheros necesarios para los convertidores, así como la estructura de directorios requerida.
 
@@ -108,7 +110,7 @@ Ilustración 8-Comparación GT con medidas reales
 
 Como vemos los resultados son bastante buenos en cuanto a las predicciones, ya que, por ejemplo, para el hervidor (en azul) sólo se presenta una pequeña desviación del 0,2% frente a los datos reales. Asimismo, tanto el ventilador (en rojo) como la luz (rosa) presentan una mínima variación y la aspiradora (en naranja) solo presenta una desviación del 1,6%.
 
-**\# RESULTADOS**
+# RESULTADOS
 
 NILMTK cuenta con el cálculo de métricas de evaluación por medio del uso del MeterGroup, para la validación de los resultados mediante el set de validación. Es preciso ejecutar para ello, sobre los modelos obtenidos, diferentes métricas como son FEAC, F1, EAE, MNEAP y RMSE, que nos da una salida algo similar a la Tabla 1.
 
@@ -172,17 +174,13 @@ En este trabajo en el ámbito de NILMTK además de incorporar tanto las métrica
 
 Por otro lado, si comparamos los resultados de las métricas obtenidas sobre DSUALM o DSUALMT, frente a IAWE o DEPS los resultados son mucho peores especialmente en cuanto al periodo de muestreo necesario, destacando especialmente los valores obtenidos para la métrica MNEAP.
 
-**\*\*Publicaciones\*\***
+# Publicaciones*
 
 Hay un artículo de mi autoría sobre el NILM que usa el hardware OZM monofásico en lugar del OZM v2:
 
 \- C. Rodriguez-Navarro, A. Alcayde, V. Isanbaev, L. Castro-Santos, A. Filgueira-Vizoso, and F. G. Montoya, “DSUALMH- A new high-resolution dataset for NILM,” \*Renewable Energy and Power Quality Journal\*, vol. 21, no. 1, pp. 238–243, Jul. 2023, doi: 10.24084/repqj21.286.
 
-Asimismo, con el fin de hacer replicable todo este trabajo se ha desarrollado un nuevo multi contador abierto llamado OMPM esta publicada en la revista científica “Inventions:”
+Asimismo, con el fin de hacer replicable todo este trabajo se ha desarrollado un nuevo multi contador abierto llamado OMPM esta publicada en la revista científica “Inventions:” 
 
 \- C. Rodríguez-Navarro, F. Portillo, F. Martínez, F. Manzano-Agugliaro, and A. Alcayde, “Development and Application of an Open Power Meter Suitable for NILM,” \*Inventions\*, vol. 9, no. 1, p. 2, Dec. 2023, doi: 10.3390/inventions9010002.
 
-
-
-## Nota 
-El DS al exceder de 25MB se ha subido comprimido con el winrar 
