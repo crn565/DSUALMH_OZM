@@ -7,11 +7,17 @@ El OZM v1 es un medidor monofásico de energía eléctrica (aunque ya existe una
 Usamos 6 contadores tipo OZM aplicados  a 5 electromesticos de uso común.
 
 Este es listado de dispositivos:
+   
    1- Mains ( contador principal)
+   
    2-Hervidor de agua
+   
    3-Ventilador
+   
    4-Congelador
+   
    5- TV
+   
    6-Aspiradora
 
 En este repositorio se analiza el impacto de tomar los armónicos para desagregar el consumo eléctrico usando OZM v1 y el Toolkit NILMTK. 
