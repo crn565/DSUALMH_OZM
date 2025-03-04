@@ -39,6 +39,7 @@ On the other hand, the OZM is an advanced power meter, which is also a power qua
 ![Un ratón de computadora Descripción generada automáticamente con confianza media](media/8b142fc4123b890a4b89929ad749c4f0.png)
 
 Illustration 1-Appearance of the OZM
+
 Precisamente gracias a las características del OZM, el objetivo de este trabajo es usando los datos arrojados por los nuevos dispositivos, mostrar el uso y potenciales aplicaciones en cuanto a la desegregación de la energía con estos datos, adaptando para ello la herramienta de monitoreo de carga no intrusivo NILMTK. Hay que destacar que para capturar los datos de los OZM tanto sin usar armónicos como usando los armónicos de tensión, corriente y potencia hasta el orden 50, así como asociar los correspondientes metadatos del OZM, se proporcionan dos nuevos conversores y convertidores que nos han permitido crear dos nuevos DS: DSUALM y DSUALMH almacenándose en el formato HDF5.
 
 # RELATED WORK
@@ -85,7 +86,9 @@ The models presented in this paper make use of data from recordings of several h
 
 ![Imagen que contiene interior, tabla, pequeño, cocina Descripción generada automáticamente](media/ee788945b64977eead987834be39d4a0.png)
 
-Ilustración 3-Toma de medidas con OZM
+
+Illustration 3-Taking measurements with OZM
+
 
 We have as a container for the measurements collected from the OZMs, files with 160 data fields, fields, by the way, not all of which will be relevant, at least in the first phase of the study, so we need to adapt them for use in the NILMTK.
 
