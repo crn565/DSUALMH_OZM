@@ -47,28 +47,30 @@ Precisamente gracias a las características del OZM, el objetivo de este trabajo
 En cuanto a los métodos existentes de desagregación de energía se pueden clasificar en cuatro grupos principales: **métodos de optimización** (destacando Vector Support Machines o SVM , Bird swarm algorithm o BSA , algoritmos genéticos y Particle Swarm Optimization o PSO entre otros), **métodos supervisados** (destacando los clasificadores bayesianos , Support Vector Machine o SVM , el algoritmo Discriminative Disaggregation Sparse Coding o DDSC , las Redes Neuronales Artificiales o ANN, así como sus extensiones), **métodos no supervisados** (destacando el de optimización combinatoria o CO, los modelos de Markov o HMM y sus extensiones, como el FHMM ), y **otros**.
 
 Public Datasets
+
 On the other hand, there are Public Datasets that can be used to test and compare the results offered by different energy disaggregation algorithms, among which we highlight:
 
 Notable Datasets
-AMPds: Readings for a 1-minute overall meter, as well as sub-metered readings of 19 individual circuits.
 
-DRED: Electricity data, environmental information, occupancy information, and household information.
+- AMPds: Readings for a 1-minute overall meter, as well as sub-metered readings of 19 individual circuits.
 
-ECO: 1 Hz aggregate consumption data and also data taken at 1 Hz from selected appliances in 6 households for 8 months.
+- DRED: Electricity data, environmental information, occupancy information, and household information.
 
-GREEND: Power data taken at 1-second intervals from 9 appliances and the total energy demand of 9 households over one year.
+- ECO: 1 Hz aggregate consumption data and also data taken at 1 Hz from selected appliances in 6 households for 8 months.
 
-HES: Measurements of 51 appliances at 2-minute intervals from 251 households over 12 months.
+- GREEND: Power data taken at 1-second intervals from 9 appliances and the total energy demand of 9 households over one year.
 
-IAWE: Aggregate measurements and sub-measurements of electricity and gas from 33 appliances at 1-second resolution over 73 days from one household.
+- HES: Measurements of 51 appliances at 2-minute intervals from 251 households over 12 months.
 
-REDD: Power measurements at 3-second to 4-second intervals from 6 US households.
+- IAWE: Aggregate measurements and sub-measurements of electricity and gas from 33 appliances at 1-second resolution over 73 days from one household.
 
-REFIT: Aggregate and 9 individual appliance power measurements from 20 homes, with a resolution of 1 sample every 8 seconds.
+- REDD: Power measurements at 3-second to 4-second intervals from 6 US households.
 
-UK-DALE: 16 kHz aggregate measurements and 6-second sub-metered energy data from individual appliances in 3 UK homes, as well as 1-second aggregate and 6-second sub-metering for 2 additional homes.
+- REFIT: Aggregate and 9 individual appliance power measurements from 20 homes, with a resolution of 1 sample every 8 seconds.
 
-DEPS: 1 Hz readings on 6 devices present in a classroom taken over one month
+- UK-DALE: 16 kHz aggregate measurements and 6-second sub-metered energy data from individual appliances in 3 UK homes, as well as 1-second aggregate and 6-second sub-metering for 2 additional homes.
+
+- DEPS: 1 Hz readings on 6 devices present in a classroom taken over one month
 
 
 # ARCHITECTURE
