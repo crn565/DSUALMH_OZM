@@ -7,17 +7,17 @@ The OZM v1 is a single-phase power meter (although a three-phase version already
 
 We used 6 OZM type meters applied to 5 commonly used household appliances. This is the list of devices:
 
-1- Mains (main meter)
+ 1 - Mains (main meter)
 
-2-Kettle
+ 2 - Kettle
 
-3-Fan 
+ 3 - Fan 
 
-4-Freezer
+ 4 - Freezer
 
-5- TV
+ 5 - TV
 
-6-Aspirator
+ 6 - Aspirator
 
 
 In this repository we analyse the impact of taking harmonics to disaggregate power consumption using OZM v1 and the NILMTK Toolkit. In this repository we specify the number of measurements supported by the different OZMs, such as active, apparent and reactive power, frequency, voltage, current and power factor, as well as adding the harmonics of voltage (50), current (50) and power (50). In other words, we add a total of 150 more values compared to the second experiment where the harmonics are ignored.
