@@ -1,5 +1,5 @@
 #
-# REPOSITORY OF 5 APPLICATIONS PLUS AGGREGATION VIA OZM V1 INCLUDING HARMONICS
+# REPOSITORY OF FIVE APPLICATIONS PLUS AGGREGATION VIA OZM V1 INCLUDING HARMONICS
 #
 This is the repository that constitutes the third experiment using ozm v1 devices with temporally coupled data. The temporal coupling indicates that there is synchronisation in time between the different measurements of the different meters associated with the common use synchronisation and the main common meter of the aggregate. In this experiment in addition to the usual measurements we will use voltage, current and power harmonics.This is the repository that constitutes the third experiment using ozm v1 devices with temporally coupled data. The temporal coupling indicates that there is synchronisation in time between the different measurements of the different meters associated with the common use synchronisation and the main common meter of the aggregate. In this experiment in addition to the usual measurements we will use voltage, current and power harmonics.
 
