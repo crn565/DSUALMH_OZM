@@ -3,21 +3,21 @@
 #
 This is the repository that constitutes the third experiment using ozm v1 devices with temporally coupled data. The temporal coupling indicates that there is synchronisation in time between the different measurements of the different meters associated with the common use synchronisation and the main common meter of the aggregate. In this experiment in addition to the usual measurements we will use voltage, current and power harmonics.This is the repository that constitutes the third experiment using ozm v1 devices with temporally coupled data. The temporal coupling indicates that there is synchronisation in time between the different measurements of the different meters associated with the common use synchronisation and the main common meter of the aggregate. In this experiment in addition to the usual measurements we will use voltage, current and power harmonics.
 
-The OZM v1 is a single-phase power meter (although a three-phase version already exists), which is also a power quality analyser, which has been used to take the measurements used in this repository. This device, which is both open source and open hardware, has been developed jointly by the Universities of Almeria and Granada, and also has IoT capabilities, which not only allows us to measure a wide range of electrical variables at a high sampling frequency of 15625 Hz (voltage, current, active power, reactive power, total harmonic distortion or THD, power factor and harmonics of both current and voltage and power up to the order 50), but also allows us to capture and process all these measurements.
+The **OZM v1 is a single-phase power meter** (although a three-phase version already exists), which is also a power quality analyser, which has been used to take the measurements used in this repository. This device, which is both open source and open hardware, has been developed jointly by the Universities of Almeria and Granada, and also has IoT capabilities, which not only allows us to measure a wide range of electrical variables at a high sampling frequency of 15625 Hz (voltage, current, active power, reactive power, total harmonic distortion or THD, power factor and harmonics of both current and voltage and power up to the order 50), but also allows us to capture and process all these measurements.
 
 We used 6 OZM type meters applied to 5 commonly used household appliances. This is the list of devices:
 
- 1 - Mains (main meter)
+  -1 - Mains (main meter)
 
- 2 - Kettle
+  -2 - Kettle
 
- 3 - Fan 
+  -3 - Fan 
 
- 4 - Freezer
+  -4 - Freezer
 
- 5 - TV
+  -5 - TV
 
- 6 - Aspirator
+  -6 - Aspirator
 
 
 In this repository we analyse the impact of taking harmonics to disaggregate power consumption using OZM v1 and the NILMTK Toolkit. In this repository we specify the number of measurements supported by the different OZMs, such as active, apparent and reactive power, frequency, voltage, current and power factor, as well as adding the harmonics of voltage (50), current (50) and power (50). In other words, we add a total of 150 more values compared to the second experiment where the harmonics are ignored.
